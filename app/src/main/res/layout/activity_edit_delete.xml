@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Edit_Delete">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nombre"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Nombre del producto"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/tv_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Descripción"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/et_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Descripción del producto"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/tv_cantidad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cantidad"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/et_cantidad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Cantidad"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/tv_precio_costo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Precio Costo"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/et_precio_costo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Precio del costo"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/tv_precio_venta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Precio Venta"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/et_precio_venta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Precio de venta"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/tv_url"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="URL de la imágen"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/et_URL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="URL"
+            android:inputType="text" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="92dp"
+        android:text="Editar"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btn_delete"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout6" />
+
+    <Button
+        android:id="@+id/btn_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:text="Eliminar"
+        app:layout_constraintStart_toEndOf="@+id/btn_edit"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout6" />
+</androidx.constraintlayout.widget.ConstraintLayout>
