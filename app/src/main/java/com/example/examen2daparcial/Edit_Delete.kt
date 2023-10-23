@@ -39,12 +39,14 @@ class Edit_Delete : AppCompatActivity() {
 
         val product = intent.getSerializableExtra("selected_item") as? Product
         if (product != null){
+            val idEdit = findViewById<TextView>(R.id.idEdit) //Aquí lo llamé como si fuera un EditText auqnue realmente sea un TextView porque quiero que sólo muestre el id.
             val nameEdit = findViewById<EditText>(R.id.et_name)
             val descriptionEdit = findViewById<EditText>(R.id.et_description)
             val etQUANTITY = findViewById<EditText>(R.id.et_cantidad)
             val etPRECIOcost = findViewById<EditText>(R.id.et_precio_costo)
             val etPRECIOventa = findViewById<EditText>(R.id.et_precio_venta)
             val etURL = findViewById<EditText>(R.id.et_URL)
+            idEdit.text = "${product.id}"
             nameEdit.setHint(product.name)
             descriptionEdit.setHint(product.description)
             etQUANTITY.setHint(product.quantity.toString())
@@ -94,6 +96,7 @@ class Edit_Delete : AppCompatActivity() {
         btn_edit.setOnClickListener(){
             if (product != null){
                 //editProduct(product.id, updatedProduct)
+                val idEdit = findViewById<TextView>(R.id.idEdit)
                 val nameEdit = findViewById<EditText>(R.id.et_name)
                 val descriptionEdit = findViewById<EditText>(R.id.et_description)
                 val etQUANTITY = findViewById<EditText>(R.id.et_cantidad)

@@ -44,6 +44,7 @@ class ProductAdapter(private val context: Context, private val productList: List
         val rowView = inflater.inflate(R.layout.activity_list, parent, false)
 
         //Inicialización de los elementos externos del activity_list.xml(es ahí donde se cargan los datos y después se extraen para ponerlos en el main).
+        val idText = rowView.findViewById<TextView>(R.id.idText)
         val nameTextView = rowView.findViewById<TextView>(R.id.nameTextView)
         val descriptionTextView = rowView.findViewById<TextView>(R.id.descriptionTextView)
         val cantidadTextView = rowView.findViewById<TextView>(R.id.cantidadTextView)
@@ -56,6 +57,7 @@ class ProductAdapter(private val context: Context, private val productList: List
             .into(imageview)
 
         //Aquí se mandan los datos a activity_list.xml
+        idText.text = "Id: ${product.id}"
         nameTextView.text = "Nombre de producto: ${product.name}"
         descriptionTextView.text = "Descripción: ${product.description}"
         cantidadTextView.text = "Cantidad: ${product.quantity.toString()}"

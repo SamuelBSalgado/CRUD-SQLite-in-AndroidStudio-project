@@ -18,6 +18,19 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
+            android:id="@+id/idText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ID"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/idEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24sp" />
+
+        <TextView
             android:id="@+id/tv_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

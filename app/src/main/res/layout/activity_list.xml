@@ -16,6 +16,12 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
+            android:id="@+id/idText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ID" />
+
+        <TextView
             android:id="@+id/nameTextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -31,24 +37,24 @@
             android:id="@+id/cantidadTextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Cantidad del Producto"/>
+            android:text="Cantidad del Producto" />
 
         <TextView
             android:id="@+id/precioCostoTextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Precio de Costo del Producto"/>
+            android:text="Precio de Costo del Producto" />
 
         <TextView
             android:id="@+id/PrecioVentaTextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Precio de Venta del Producto"/>
+            android:text="Precio de Venta del Producto" />
 
         <ImageView
             android:id="@+id/imagen"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content" />
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
